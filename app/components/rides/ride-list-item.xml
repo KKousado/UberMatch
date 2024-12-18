@@ -1,0 +1,11 @@
+<GridLayout columns="auto, *, auto" class="p-2 border-b">
+    <StackLayout col="0" class="mr-2">
+        <Label text="{{ horario }}" class="font-bold" />
+        <Label text="{{ distancia }}" class="text-sm text-gray-500" />
+    </StackLayout>
+    <StackLayout col="1">
+        <Label text="{{ origem }}" class="text-sm" />
+        <Label text="{{ destino }}" class="text-sm text-gray-500" />
+    </StackLayout>
+    <Label col="2" text="{{ valor }}" class="font-bold {{ 'status-' + status }}" />
+</GridLayout>

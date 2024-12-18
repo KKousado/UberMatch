@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+      navigatingTo="onNavigatingTo" 
+      class="waze-bg">
+    <ActionBar title="UberMatch" class="waze-bg">
+        <NavigationButton visibility="collapsed" />
+    </ActionBar>
+
+    <GridLayout rows="auto, *" class="p-4">
+        <include src="~/components/statistics/statistics-panel" row="0" />
+        
+        <ListView row="1" 
+                 items="{{ corridas }}" 
+                 class="bg-white rounded-lg m-2"
+                 accessibilityLabel="Lista de corridas">
+            <ListView.itemTemplate>
+                <include src="~/components/rides/ride-list-item" />
+            </ListView.itemTemplate>
+        </ListView>
+    </GridLayout>
+</Page>

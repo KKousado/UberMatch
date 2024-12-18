@@ -1,0 +1,17 @@
+<StackLayout class="bg-white rounded-lg p-4 m-2">
+    <Label text="Resumo do Dia" class="text-lg font-bold mb-2" />
+    <GridLayout columns="*, *, *" class="text-center">
+        <StackLayout col="0">
+            <Label text="Ganhos" class="text-sm" />
+            <Label text="{{ ganhosDia }}" class="font-bold" />
+        </StackLayout>
+        <StackLayout col="1">
+            <Label text="Corridas" class="text-sm" />
+            <Label text="{{ corridasDia }}" class="font-bold" />
+        </StackLayout>
+        <StackLayout col="2">
+            <Label text="Média/Corrida" class="text-sm" />
+            <Label text="{{ mediaCorrida }}" class="font-bold" />
+        </StackLayout>
+    </GridLayout>
+</StackLayout>
