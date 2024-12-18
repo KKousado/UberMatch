@@ -2,18 +2,12 @@
   "cli": {
     "version": ">= 3.0.0"
   },
-  "build": {
-    "test": {
-      "android": {
-        "buildType": "apk"
-      }
-    }
-  },
   "submit": {
     "test": {
       "android": {
         "serviceAccountKeyPath": "./google-play-service-account.json",
-        "track": "internal"
+        "track": "internal",
+        "releaseStatus": "completed"
       }
     }
   }
