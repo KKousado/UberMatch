@@ -1,22 +1,20 @@
 {
   "cli": {
-    "version": ">= 3.13.3"
+    "version": ">= 3.0.0"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
-    "preview": {
-      "distribution": "internal"
-    },
-    "production": {
+    "test": {
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "apk"
       }
     }
   },
   "submit": {
-    "production": {}
+    "test": {
+      "android": {
+        "serviceAccountKeyPath": "./google-play-service-account.json",
+        "track": "internal"
+      }
+    }
   }
 }
